@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Layout Grid & Flex</title>
+    <link rel="stylesheet"  href="static/js/slick/slick.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="static/js/slick/slick.min.js"></script>
+<link href="main.css" rel="stylesheet"></head>
+
+<body>
+<header class="header">
+    <img src="static/img/bike_header.jpg" alt="bike" class="header__photo">
+    <div class="mobile-menu ">
+        <div class="mobile-menu__line mobile-menu__line_top"></div>
+        <div class="mobile-menu__line mobile-menu__line_middle"></div>
+        <div class="mobile-menu__line mobile-menu__line_bottom"></div>
+    </div>
+    <nav class="menu">
+        <ul class="menu__list">
+            <li class="menu__item"><a href="#" class="menu__link">About us</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">work</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">shop</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="logo">
+        <img src="static/img/Logo.png" alt="logo">
+    </div>
+</header>
+
+<main class="content">
+    <div class="content-wrapper">
+        <article class="content-article article_full-width">
+            <span class="content-article__icon">
+               <img src="static/img/icon_about.png" alt="bicycle chain">
+            </span>
+            <h1 class="content-article__title title_full-width">A NEW GENERATION OF VINTAGE BIKE</h1>
+            <p class="content-article__text text_full-width">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    It has survived not only five centuries, but also the leap into electronic typesetting,
+                    remaining essentially unchanged.
+            </p>
+        </article>
+    </div>
+
+    <div class="wrapper-grid grid-1">
+        <section class="medium-photo">
+            <img class="photo" src="static/img/bike_content.jpg" alt="bicycle helm">
+            <span class="photo-top ">
+                <img src="static/img/logo_white.png" alt="logo white">
+            </span>
+        </section>
+        <article class="content-article content-article_small">
+            <div class="content-article__icon">
+                <img src="static/img/bicycle_frame.png" alt="bicycle frame">
+            </div>
+            <h2 class="content-article__title title_small">vintage Oliva</h2>
+            <p class="content-article__text content-article__text_small"> Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                It has survived.
+            </p>
+        </article>
+        <span class="small-photo">
+            <img class="photo" src="static/img/bike_seat.jpg" alt="bicycle helm">
+        </span>
+    </div>
+    <div class="wrapper-grid grid-2">
+        <section class="medium-photo">
+            <img class="photo" src="static/img/bike_vintage.jpg" alt="bicycle helm">
+            <span class="photo-top ">
+                <img src="static/img/logo_vintage.png" alt="logo white">
+            </span>
+        </section>
+        <article class="content-article content-article_small">
+            <div class="content-article__icon">
+                <img src="static/img/Icon_chain.png" alt="bicycle frame">
+            </div>
+            <h2 class="content-article__title title_small">La Boriosa</h2>
+            <p class="content-article__text content-article__text_small"> Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                It has survived.
+            </p>
+        </article>
+        <span class="small-photo">
+            <img class="photo" src="static/img/bike_seat_vin.jpg" alt="bicycle helm">
+        </span>
+    </div>
+
+    <div class="wrapper-grid grid-3">
+        <section class="medium-photo">
+            <img class="photo" src="static/img/bike_frame.jpg" alt="bicycle helm">
+            <span class="photo-top ">
+                <img src="static/img/logo_bicycles.png" alt="logo white">
+            </span>
+        </section>
+        <article class="content-article content-article_small">
+            <div class="content-article__icon">
+                <img src="static/img/Icon_rama.png" alt="bicycle frame">
+            </div>
+            <h2 class="content-article__title title_small">retrò Bike - M. Hulot</h2>
+            <p class="content-article__text content-article__text_small"> Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                It has survived.
+            </p>
+        </article>
+        <span class="small-photo">
+            <img class="photo" src="static/img/mavic_bike.jpg" alt="bicycle">
+        </span>
+        <section class="medium-photo_right medium-photo">
+            <img class="photo" src="static/img/red_bike.jpg" alt="bicycle">
+        </section>
+    </div>
+
+    <section class="slider-wrapper">
+        <div class="slider">
+            <article class="slider-content">
+                <div class="slider-content__icon">
+                    <img src="static/img/Icon_twitter.png" alt="bicycle chain">
+                </div>
+                <h3 class="slider-content__title">AOD New York  @aod <span>  /  35 min</span></h3>
+                <p class="slider-content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Sed ut tellus ac nulla semper rhoncus. Nullam a odio porttitor,
+                dictum turpis vitae, pretium ante amet. </p>
+            </article>
+            <article class="slider-content">
+                <div class="slider-content__icon">
+                    <img src="static/img/Icon_twitter.png" alt="bicycle chain">
+                </div>
+                <h3 class="slider-content__title">AOD New York  @aod <span>  /  35 min</span></h3>
+                <p class="slider-content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Sed ut tellus ac nulla semper rhoncus. Nullam a odio porttitor,
+                    dictum turpis vitae, pretium ante amet. </p>
+            </article>
+            <article class="slider-content">
+                <div class="slider-content__icon">
+                    <img src="static/img/Icon_twitter.png" alt="bicycle chain">
+                </div>
+                <h3 class="slider-content__title">AOD New York  @aod <span>  /  35 min</span></h3>
+                <p class="slider-content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Sed ut tellus ac nulla semper rhoncus. Nullam a odio porttitor,
+                    dictum turpis vitae, pretium ante amet. dictum turpis vitae, pretium ante amet.
+                    dictum turpis vitae, pretium ante amet.
+                </p>
+            </article>
+        </div>
+    </section>
+
+
+    <section class="shop">
+        <div class="shop__small-photo shop__small-photo_left photo_hover">
+            <img class="small-photo_mini" src="static/img/seat_grey.jpg" alt="seat_grey">
+            <img class="small-photo_mini" src="static/img/many_bike_seat.jpg" alt="many_bike_seat">
+            <div class="bg-top">
+                <a href="#" class="shop__photo-top">
+                    <img src="static/img/icon_shop.png" alt="">shop now
+                </a>
+            </div>
+        </div>
+
+        <div class="shop__small-photo_left-bottom photo_hover">
+            <img class="photo" src="static/img/seat_bike_large.jpg" alt="seat_bike_large">
+            <div class="bg-top">
+                <a href="#" class="shop__photo-top">
+                    <img src="static/img/icon_shop.png" alt="">shop now
+                </a>
+            </div>
+        </div>
+
+        <div class="shop__photo-center_left photo_hover">
+            <img class="photo " src="static/img/bike_bag.jpg" alt="bike_bag">
+            <div class="bg-top">
+                <a href="#" class="shop__photo-top">
+                    <img src="static/img/icon_shop.png" alt="">shop now
+                </a>
+            </div>
+        </div>
+        <div class="shop__photo-center_right photo_hover">
+            <img class="photo" src="static/img/bike_halvs.jpg" alt="bike_halv">
+            <div class="bg-top">
+                <a href="#" class="shop__photo-top">
+                    <img src="static/img/icon_shop.png" alt="">shop now
+                </a>
+            </div>
+        </div>
+        <div class="shop__small-photo_right photo_hover">
+            <img class="photo" src="static/img/bike_shop.jpg" alt="bike_shop">
+            <div class="bg-top">
+                <a href="#" class="shop__photo-top">
+                    <img src="static/img/icon_shop.png" alt="">shop now
+                </a>
+            </div>
+        </div>
+        <div class="shop__small-photo shop__small-photo_right-bottom photo_hover">
+            <img class="small-photo_mini" src="static/img/bike_seat_fas.jpg" alt="bike_seat_fas">
+            <img class="small-photo_mini" src="static/img/bag.jpg" alt="bag">
+            <div class="bg-top">
+                <a href="#" class="shop__photo-top">
+                    <img src="static/img/icon_shop.png" alt="">shop now
+                </a>
+            </div>
+        </div>
+
+    </section>
+    <section class="discover-shop">
+        <a href='#' class="discover-shop__button">DISCOVER THE SHOP</a>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <section class="subscribe">
+        <div class="subscribe-inner">
+            <a href="#">
+                <img src="static/img/Logo.png" alt="logo">
+            </a>
+            <p>Stay on the saddle! </p>
+            <form action="/" class="subscribe-form" method="get">
+                <div class="input-group">
+                    <label for="myinput">enter your email</label>
+                    <input id="myinput" class="subscribe-form__input" type="email" name="email" placeholder="enter your email...">
+                    <button type="submit" name="submit" class="subscribe-form__button">Go</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section class="subfooter">
+        <div class="subfooter__adress">
+            <b>AOD New York</b>
+            <p>2250 Lexington Avenue </p>
+            <p>New York, NY 10035  - info@domain.com</p>
+        </div>
+        <div class="subfooter__social">
+            <a href="#">
+                <img  src="static/img/twitter.png" alt="twitter">
+            </a>
+            <a href="#">
+                <img  src="static/img/facebook.png" alt="facebook">
+            </a>
+            <a href="#">
+                <img  src="static/img/printress.png" alt="printress">
+            </a>
+        </div>
+        <div class="subfooter__made">
+            <span>Handcrafted by </span>
+            <a href="#">
+                <img src="static/img/yeboLogo.png" alt="yeboLogo">
+            </a>
+        </div>
+    </section>
+
+</footer>
+
+<script type="text/javascript" src="app.bundle.js"></script></body>
