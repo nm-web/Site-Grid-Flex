@@ -1,0 +1,20 @@
+.discover-shop{
+  height: 200px;
+  background-color: #282f35;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.discover-shop__button{
+  display: block;
+  text-align: center;
+  line-height: 3.125em;
+  height: 3.125em;
+  width:18.75em;
+  background-color: #282f35;
+  color: #d4d5d6;
+  border: 1px solid #94979a;
+  text-transform: uppercase;
+  cursor: pointer;
+}

@@ -1,0 +1,128 @@
+
+.header {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  &__photo {
+    height: 100%;
+  }
+}
+
+.menu {
+  position: absolute;
+  margin: 3em auto;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.menu__list {
+  display: flex;
+  justify-content: center;
+
+  & .menu__item {
+    position: relative;
+  }
+  & .menu__item:not(:last-child) {
+    margin-right: 4.3em;
+    align-self: center;
+  }
+  & .menu__item:nth-child(3) {
+    margin-left: 13em;
+    &:after {
+      left: 65px;
+    }
+  }
+  & .menu__item:nth-child(odd):after{
+    position: absolute;
+    content: '.';
+    font-size: 2em;
+    top: -15px;
+  }
+  & .menu__item:first-child:after {
+    left: 95px;
+  }
+}
+
+.menu__link {
+  text-transform: uppercase;
+  font-size: 0.813rem;
+  color: #4d4959;
+  font-weight: bold;
+}
+
+.logo {
+  position: absolute;
+  top: 1em;
+  left: calc(50% - 2.94em);
+  z-index: 10;
+}
+
+.mobile-menu {
+  position: absolute;
+  top: 3em;
+  right: 3em;
+  display: none;
+  z-index: 5;
+}
+.mobile-menu__line {
+  margin-left: 1em;
+  width: 32px;
+  background-color: $green;
+  height:4px;
+  border-radius: 1.5px; }
+
+.mobile-menu__line:not(:first-child) {
+  margin-top: 4px; }
+
+.mobile-menu_active {
+  transition: 0.5s;
+  & .mobile-menu__line_top {
+    transform: rotate(-45deg) translateX(-6px) translateY(5px);
+  }
+  & .mobile-menu__line_bottom {
+    transform: rotate(45deg) translateX(0px) translateY(0px);
+  }
+  & .mobile-menu__line_middle{
+    display: none;
+  }
+}
+
+@media  screen and (max-width: 48em) {
+
+  .mobile-menu {
+    display: block;
+  }
+  .menu {
+    display: none;
+  }
+}
+.menu_column {
+  margin: 0;
+  background: #000;
+  opacity: 0.5;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  & .menu__list{
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    & .menu__item {
+      margin: 2em 0;
+      &:not(:last-child):after {
+        position: absolute;
+        content: '.';
+        font-size: 2em;
+        top: 1em;
+        color:$green;
+        left: 50%;
+      }
+      & .menu__link {
+        color:$green;
+        font-size: 2em;
+      }
+    }
+  }
+
+}
